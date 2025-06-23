@@ -7,7 +7,7 @@ public class CordovaActions {
 
     public enum Action {
 
-        ACTION_IS_ROOTED("isRooted"),
+        ACTION_IS_ROOTED("isChecklistValid"),
         ACTION_IS_ROOTED_WITH_BUSY_BOX("isRootedWithBusyBox"),
         ACTION_DETECTROOTMANAGEMENTAPPS("detectRootManagementApps"),
         ACTION_DETECTPOTENTIALLYDANGEROUSAPPS("detectPotentiallyDangerousApps"),

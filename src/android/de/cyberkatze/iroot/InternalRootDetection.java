@@ -23,7 +23,7 @@ public class InternalRootDetection {
 
     // ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---
 
-    public boolean isRooted(final Context context) {
+    public boolean isChecklistValid(final Context context) {
         boolean c1 = isExistBuildTags();
         boolean c2 = doesSuperuserApkExist();
         boolean c3 = isExistSUPath();
@@ -614,17 +614,4 @@ public class InternalRootDetection {
             return null;
         }
     }
-
-    // TODO: https://github.com/tansiufang54/fncgss/blob/master/app/src/main/java/co/id/franknco/controller/RootUtil.java#L126
-    //    private boolean checkServerSocket() {
-    //        try {
-    //            ServerSocket ss = new ServerSocket(81);
-    //            ss.close();
-    //            return true;
-    //        } catch (Exception e) {
-    //            // not sure
-    //        }
-    //        return false;
-    //    }
-
 }

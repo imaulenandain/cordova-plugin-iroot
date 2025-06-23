@@ -353,7 +353,7 @@ public class IRoot extends CordovaPlugin {
              RootBeer rootBeer = new RootBeer(context);
 
              boolean checkRootBeer = rootBeer.isRooted();
-             boolean checkInternal = this.internalRootDetection.isRooted(context);
+             boolean checkInternal = this.internalRootDetection.isChecklistValid(context);
 
              LOG.d(Constants.LOG_TAG, "[checkIsRooted] checkRootBeer: " + checkRootBeer);
              LOG.d(Constants.LOG_TAG, "[checkIsRooted] checkInternal: " + checkInternal);
@@ -377,7 +377,7 @@ public class IRoot extends CordovaPlugin {
             RootBeer rootBeer = new RootBeer(context);
 
             boolean checkRootBeer = rootBeer.isRootedWithBusyBoxCheck();
-            boolean checkInternal = this.internalRootDetection.isRooted(context);
+            boolean checkInternal = this.internalRootDetection.isChecklistValid(context);
 
             LOG.d(Constants.LOG_TAG, "[checkIsRootedWithBusyBox] checkRootBeer: " + checkRootBeer);
             LOG.d(Constants.LOG_TAG, "[checkIsRootedWithBusyBox] checkInternal: " + checkInternal);
