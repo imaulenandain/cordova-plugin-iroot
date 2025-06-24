@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <plugin id="cordova-plugin-iroot" version="3.1.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
-    <name>iRoot</name>
+    <name>IChecklistPlugin</name>
     <author>Elderov Ali (info@cyberkatze.de)</author>
 
     <description>Jailbreak/Root Detection Plugin for Apache Cordova</description>
@@ -17,8 +17,8 @@
         <engine name="cordova-ios" version=">=6.0.0" />
     </engines>
 
-    <js-module name="IRoot" src="www/iroot.js">
-        <clobbers target="IRoot"/>
+    <js-module name="IChecklistPlugin" src="www/iroot.js">
+        <clobbers target="IChecklistPlugin"/>
     </js-module>
 
     <platform name="ios">
@@ -36,7 +36,7 @@
 
     <platform name="android">
         <config-file parent="/*" target="res/xml/config.xml">
-            <feature name="IRoot">
+            <feature name="IChecklistPlugin">
                 <param name="android-package" value="de.cyberkatze.iroot.IRoot"/>
                 <param name="onload" value="true"/>
             </feature>

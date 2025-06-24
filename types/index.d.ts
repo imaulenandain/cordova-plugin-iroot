@@ -70,4 +70,4 @@ interface IRootPlugin {
     listFilesInDirectory(onSuccess: (any) => void, onError: (any) => void): void;
 }
 
-declare var IChecklist: IRootPlugin;
+declare var IChecklistPlugin: IRootPlugin;

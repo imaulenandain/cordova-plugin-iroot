@@ -23,7 +23,7 @@ public class InternalRootDetection {
 
     // ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---
 
-    public boolean isChecklistValid(final Context context) {
+    public boolean isRooted(final Context context) {
         boolean c1 = isExistBuildTags();
         boolean c2 = doesSuperuserApkExist();
         boolean c3 = isExistSUPath();
